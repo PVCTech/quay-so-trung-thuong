@@ -1,0 +1,1041 @@
+<head>
+	<title>QUAY SỐ TRÚNG THƯỞNG - PVCPlus</title>	
+	<meta charset="UTF-8">
+	<style>
+		.Marqueee {width:75px;height:80px;}
+		.DivSo {font-size:80px;width:75px;height:80px;text-align:center;background:white;}
+		a:link {
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  text-decoration: none;
+		}
+		
+		.KetQua {
+		    float: left;
+		    border-radius:5px;
+		    padding-left:15px;
+		    padding-right:15px;
+		    padding-top:5px;
+		    padding-bottom:5px;
+		    margin-left:15px;
+		    margin-right:15px;
+		    margin-top:5px;
+		    margin-bottom:5px;
+		    font-weight:bold;
+		    font-size:24px;
+		}
+		
+		.AnDi {display:none;}
+		.KetQuaXanh {background:white;  color:green;border:green 2px solid;}
+		.KetQuaVang {background:yellow; color:green;}
+		.KetQuaDo   {background:red;    color:white;}
+	</style> 
+	<script src="jquery.js"></script>
+</head>
+<body style="background-image: url('bg/jpg/bg10.jpg');">
+	<table style="width:100%;height:100%;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+		<tr>
+			<td style="width:40%;height:20%;color:green;" colspan="3">
+				<marquee  scrollamount="10" behavior="alternate" style="width:100%;" DIRECTION="right">
+					<h1> CHÚC CÁC BẠN MAY MẮN </h1>
+				</marquee>
+			</td>
+		</tr>
+		<tr style="height:30%">
+			<td style="width:30%;">
+			</td>
+			<td style="width:40%;"><center>
+				<table border="1">
+					<tr style="height:20px;">
+						<td style="width:16%;height:20px;">
+							<div id="DivSo1" class="DivSo">
+								0
+							</div>
+						</td>
+						<td style="width:16%;">
+							<div id="DivSo2" class="DivSo">
+								0
+							</div>
+						</td>
+						<td style="width:16%;">
+							<div id="DivSo3" class="DivSo">
+								0
+							</div>
+						</td>
+						<td style="width:16%;">
+							<div id="DivSo4" class="DivSo">
+								0
+							</div>
+						</td>
+						<td style="width:16%;">
+							<div id="DivSo5" class="DivSo">
+								0
+							</div>
+						</td>
+						<td style="width:16%;">
+							<div id="DivSo6" class="DivSo">
+								0
+							</div>
+						</td>
+					</tr>
+				</table><br>
+				<a href="#"><div id="ButtonStart" style="border-radius:5px 5px 5px 5px;color:black;font-weight:bold;background:yellow;padding:10px;margin:10px;width:200px;font-decoration:none;" onclick="quayso();">QUAY SỐ</div></a>
+				<br>
+				<!-- <div id="DivThongTinNguoiTrungThuong" style="border-radius:5px 5px 5px 5px;color:black;font-weight:bold;background:white;padding:10px;margin:10px;width:500px;height:130px;text-align:left;"></div> -->
+			</td>
+			<td style="width:30%;">
+				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3"><center>
+				<div style="border-radius:5px; font-weight:bold;background:white;padding:10px;margin:10px;width:90%;min-height:200px;text-align:left;border:1px solid green;"><center>
+					<table style="width:100%;height:100%;">
+						<tr style="height:20px;">
+							<td>
+								<a href="#"><div style="float:right;border-radius:5px 5px 5px 5px;color:black;background:orange;padding:10px;font-decoration:none;font-size:10px;" onclick="xoaketqua();"><center>Quay lại giải</div></a><center><font color="green" size="6"><b><div id="TenGiaiThuong">GIẢI NHẤT</div></b></font></center>
+							</td>
+							<script>
+								function xoaketqua()
+								{
+									$(".KetQua").hide();
+									$("#SoKetQuaDaCo").val("1");
+									DanhSachDaTrungThuong =[];
+								}
+								
+							</script>
+						</tr>
+						<tr style="height:15px;">
+							<td>
+								Danh sách số may mắn trúng thưởng: 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<center><div id="DivDanhSachTrungThuong">
+								    <input type="text" style="display:none;" value="0" id="BoKQ1">
+									<input type="text" style="display:none;" value="0" id="BoKQ2">
+									<input type="text" style="display:none;" value="0" id="BoKQ3">
+									<input type="text" style="display:none;" value="0" id="BoKQ4">
+									<input type="text" style="display:none;" value="0" id="BoKQ5">
+									<input type="text" style="display:none;" value="0" id="BoKQ6">
+									<input type="text" style="display:none;" value="0" id="BoKQ7">
+									<input type="text" style="display:none;" value="0" id="BoKQ8">
+									<input type="text" style="display:none;" value="0" id="BoKQ9">
+									<input type="text" style="display:none;" value="0" id="BoKQ10">
+									<input type="text" style="display:none;" value="0" id="BoKQ11">
+									<input type="text" style="display:none;" value="0" id="BoKQ12">
+									<input type="text" style="display:none;" value="0" id="BoKQ13">
+									<input type="text" style="display:none;" value="0" id="BoKQ14">
+									<input type="text" style="display:none;" value="0" id="BoKQ15">
+									<input type="text" style="display:none;" value="0" id="BoKQ16">
+									<input type="text" style="display:none;" value="0" id="BoKQ17">
+									<input type="text" style="display:none;" value="0" id="BoKQ18">
+									<input type="text" style="display:none;" value="0" id="BoKQ19">
+									<input type="text" style="display:none;" value="0" id="BoKQ20">
+									<input type="text" style="display:none;" value="0" id="BoKQ21">
+									<input type="text" style="display:none;" value="0" id="BoKQ22">
+									<input type="text" style="display:none;" value="0" id="BoKQ23">
+									<input type="text" style="display:none;" value="0" id="BoKQ24">
+									<input type="text" style="display:none;" value="0" id="BoKQ25">
+									<input type="text" style="display:none;" value="0" id="BoKQ26">
+									<input type="text" style="display:none;" value="0" id="BoKQ27">
+									<input type="text" style="display:none;" value="0" id="BoKQ28">
+									<input type="text" style="display:none;" value="0" id="BoKQ29">
+									<input type="text" style="display:none;" value="0" id="BoKQ30">
+									<input type="text" style="display:none;" value="0" id="BoKQ31">
+									<input type="text" style="display:none;" value="0" id="BoKQ32">
+									<input type="text" style="display:none;" value="0" id="BoKQ33">
+									<input type="text" style="display:none;" value="0" id="BoKQ34">
+									<input type="text" style="display:none;" value="0" id="BoKQ35">
+									<input type="text" style="display:none;" value="0" id="BoKQ36">
+									<input type="text" style="display:none;" value="0" id="BoKQ37">
+									<input type="text" style="display:none;" value="0" id="BoKQ38">
+									<input type="text" style="display:none;" value="0" id="BoKQ39">
+									<input type="text" style="display:none;" value="0" id="BoKQ40">
+									<input type="text" style="display:none;" value="0" id="BoKQ41">
+									<input type="text" style="display:none;" value="0" id="BoKQ42">
+									<input type="text" style="display:none;" value="0" id="BoKQ43">
+									<input type="text" style="display:none;" value="0" id="BoKQ44">
+									<input type="text" style="display:none;" value="0" id="BoKQ45">
+									<input type="text" style="display:none;" value="0" id="BoKQ46">
+									<input type="text" style="display:none;" value="0" id="BoKQ47">
+									<input type="text" style="display:none;" value="0" id="BoKQ48">
+									<input type="text" style="display:none;" value="0" id="BoKQ49">
+									<input type="text" style="display:none;" value="0" id="BoKQ50">
+									<input type="text" style="display:none;" value="0" id="BoKQ51">
+									<input type="text" style="display:none;" value="0" id="BoKQ52">
+									<input type="text" style="display:none;" value="0" id="BoKQ53">
+									<input type="text" style="display:none;" value="0" id="BoKQ54">
+									<input type="text" style="display:none;" value="0" id="BoKQ55">
+									<input type="text" style="display:none;" value="0" id="BoKQ56">
+									<input type="text" style="display:none;" value="0" id="BoKQ57">
+									<input type="text" style="display:none;" value="0" id="BoKQ58">
+									<input type="text" style="display:none;" value="0" id="BoKQ59">
+									<input type="text" style="display:none;" value="0" id="BoKQ60">
+									<input type="text" style="display:none;" value="0" id="BoKQ61">
+									<input type="text" style="display:none;" value="0" id="BoKQ62">
+									<input type="text" style="display:none;" value="0" id="BoKQ63">
+									<input type="text" style="display:none;" value="0" id="BoKQ64">
+									<input type="text" style="display:none;" value="0" id="BoKQ65">
+									<input type="text" style="display:none;" value="0" id="BoKQ66">
+									<input type="text" style="display:none;" value="0" id="BoKQ67">
+									<input type="text" style="display:none;" value="0" id="BoKQ68">
+									<input type="text" style="display:none;" value="0" id="BoKQ69">
+									<input type="text" style="display:none;" value="0" id="BoKQ70">
+									<input type="text" style="display:none;" value="0" id="BoKQ71">
+									<input type="text" style="display:none;" value="0" id="BoKQ72">
+									<input type="text" style="display:none;" value="0" id="BoKQ73">
+									<input type="text" style="display:none;" value="0" id="BoKQ74">
+									<input type="text" style="display:none;" value="0" id="BoKQ75">
+									<input type="text" style="display:none;" value="0" id="BoKQ76">
+									<input type="text" style="display:none;" value="0" id="BoKQ77">
+									<input type="text" style="display:none;" value="0" id="BoKQ78">
+									<input type="text" style="display:none;" value="0" id="BoKQ79">
+									<input type="text" style="display:none;" value="0" id="BoKQ80">
+									<input type="text" style="display:none;" value="0" id="BoKQ81">
+									<input type="text" style="display:none;" value="0" id="BoKQ82">
+									<input type="text" style="display:none;" value="0" id="BoKQ83">
+									<input type="text" style="display:none;" value="0" id="BoKQ84">
+									<input type="text" style="display:none;" value="0" id="BoKQ85">
+									<input type="text" style="display:none;" value="0" id="BoKQ86">
+									<input type="text" style="display:none;" value="0" id="BoKQ87">
+									<input type="text" style="display:none;" value="0" id="BoKQ88">
+									<input type="text" style="display:none;" value="0" id="BoKQ89">
+									<input type="text" style="display:none;" value="0" id="BoKQ90">
+									<input type="text" style="display:none;" value="0" id="BoKQ91">
+									<input type="text" style="display:none;" value="0" id="BoKQ92">
+									<input type="text" style="display:none;" value="0" id="BoKQ93">
+									<input type="text" style="display:none;" value="0" id="BoKQ94">
+									<input type="text" style="display:none;" value="0" id="BoKQ95">
+									<input type="text" style="display:none;" value="0" id="BoKQ96">
+									<input type="text" style="display:none;" value="0" id="BoKQ97">
+									<input type="text" style="display:none;" value="0" id="BoKQ98">
+									<input type="text" style="display:none;" value="0" id="BoKQ99">
+									<input type="text" style="display:none;" value="0" id="BoKQ100">
+
+                                    <script>
+                                        function ChotKQ(STT)
+                                        {
+                                                var kqs = "#BoKQ" + STT;
+                                                var kqkq = "#KQ" + STT;
+                                                var BoKQSo = $(kqs).val();
+                                                if (BoKQSo == "0")
+                                                {
+                                                    $(kqkq).removeClass('KetQuaXanh');
+                                                    $(kqkq).addClass('KetQuaVang');
+                                        		    $(kqs).val("1");
+                                                }
+                                                else if (BoKQSo == "1")
+                                    		    {
+                                    		        $(kqkq).removeClass('KetQuaVang');
+                                                    $(kqkq).addClass('KetQuaDo');
+                                        		    $(kqs).val("2");
+                                    		    }
+                                    		    else if (BoKQSo == "2")
+                                    		    {
+                                    		        $(kqkq).removeClass('KetQuaDo');
+                                                    $(kqkq).addClass('KetQuaXanh');
+                                        		    $(kqs).val("0");
+                                    		    }
+                                        }
+                                    </script>				    
+								    <div onclick="ChotKQ('1');" class="KetQua KetQuaXanh AnDi" id="KQ1"></div>
+									<div onclick="ChotKQ('2');" class="KetQua KetQuaXanh AnDi" id="KQ2"></div>
+									<div onclick="ChotKQ('3');" class="KetQua KetQuaXanh AnDi" id="KQ3"></div>
+									<div onclick="ChotKQ('4');" class="KetQua KetQuaXanh AnDi" id="KQ4"></div>
+									<div onclick="ChotKQ('5');" class="KetQua KetQuaXanh AnDi" id="KQ5"></div>
+									<div onclick="ChotKQ('6');" class="KetQua KetQuaXanh AnDi" id="KQ6"></div>
+									<div onclick="ChotKQ('7');" class="KetQua KetQuaXanh AnDi" id="KQ7"></div>
+									<div onclick="ChotKQ('8');" class="KetQua KetQuaXanh AnDi" id="KQ8"></div>
+									<div onclick="ChotKQ('9');" class="KetQua KetQuaXanh AnDi" id="KQ9"></div>
+									<div onclick="ChotKQ('10');" class="KetQua KetQuaXanh AnDi" id="KQ10"></div>
+									<div onclick="ChotKQ('11');" class="KetQua KetQuaXanh AnDi" id="KQ11"></div>
+									<div onclick="ChotKQ('12');" class="KetQua KetQuaXanh AnDi" id="KQ12"></div>
+									<div onclick="ChotKQ('13');" class="KetQua KetQuaXanh AnDi" id="KQ13"></div>
+									<div onclick="ChotKQ('14');" class="KetQua KetQuaXanh AnDi" id="KQ14"></div>
+									<div onclick="ChotKQ('15');" class="KetQua KetQuaXanh AnDi" id="KQ15"></div>
+									<div onclick="ChotKQ('16');" class="KetQua KetQuaXanh AnDi" id="KQ16"></div>
+									<div onclick="ChotKQ('17');" class="KetQua KetQuaXanh AnDi" id="KQ17"></div>
+									<div onclick="ChotKQ('18');" class="KetQua KetQuaXanh AnDi" id="KQ18"></div>
+									<div onclick="ChotKQ('19');" class="KetQua KetQuaXanh AnDi" id="KQ19"></div>
+									<div onclick="ChotKQ('20');" class="KetQua KetQuaXanh AnDi" id="KQ20"></div>
+									<div onclick="ChotKQ('21');" class="KetQua KetQuaXanh AnDi" id="KQ21"></div>
+									<div onclick="ChotKQ('22');" class="KetQua KetQuaXanh AnDi" id="KQ22"></div>
+									<div onclick="ChotKQ('23');" class="KetQua KetQuaXanh AnDi" id="KQ23"></div>
+									<div onclick="ChotKQ('24');" class="KetQua KetQuaXanh AnDi" id="KQ24"></div>
+									<div onclick="ChotKQ('25');" class="KetQua KetQuaXanh AnDi" id="KQ25"></div>
+									<div onclick="ChotKQ('26');" class="KetQua KetQuaXanh AnDi" id="KQ26"></div>
+									<div onclick="ChotKQ('27');" class="KetQua KetQuaXanh AnDi" id="KQ27"></div>
+									<div onclick="ChotKQ('28');" class="KetQua KetQuaXanh AnDi" id="KQ28"></div>
+									<div onclick="ChotKQ('29');" class="KetQua KetQuaXanh AnDi" id="KQ29"></div>
+									<div onclick="ChotKQ('30');" class="KetQua KetQuaXanh AnDi" id="KQ30"></div>
+									<div onclick="ChotKQ('31');" class="KetQua KetQuaXanh AnDi" id="KQ31"></div>
+									<div onclick="ChotKQ('32');" class="KetQua KetQuaXanh AnDi" id="KQ32"></div>
+									<div onclick="ChotKQ('33');" class="KetQua KetQuaXanh AnDi" id="KQ33"></div>
+									<div onclick="ChotKQ('34');" class="KetQua KetQuaXanh AnDi" id="KQ34"></div>
+									<div onclick="ChotKQ('35');" class="KetQua KetQuaXanh AnDi" id="KQ35"></div>
+									<div onclick="ChotKQ('36');" class="KetQua KetQuaXanh AnDi" id="KQ36"></div>
+									<div onclick="ChotKQ('37');" class="KetQua KetQuaXanh AnDi" id="KQ37"></div>
+									<div onclick="ChotKQ('38');" class="KetQua KetQuaXanh AnDi" id="KQ38"></div>
+									<div onclick="ChotKQ('39');" class="KetQua KetQuaXanh AnDi" id="KQ39"></div>
+									<div onclick="ChotKQ('40');" class="KetQua KetQuaXanh AnDi" id="KQ40"></div>
+									<div onclick="ChotKQ('41');" class="KetQua KetQuaXanh AnDi" id="KQ41"></div>
+									<div onclick="ChotKQ('42');" class="KetQua KetQuaXanh AnDi" id="KQ42"></div>
+									<div onclick="ChotKQ('43');" class="KetQua KetQuaXanh AnDi" id="KQ43"></div>
+									<div onclick="ChotKQ('44');" class="KetQua KetQuaXanh AnDi" id="KQ44"></div>
+									<div onclick="ChotKQ('45');" class="KetQua KetQuaXanh AnDi" id="KQ45"></div>
+									<div onclick="ChotKQ('46');" class="KetQua KetQuaXanh AnDi" id="KQ46"></div>
+									<div onclick="ChotKQ('47');" class="KetQua KetQuaXanh AnDi" id="KQ47"></div>
+									<div onclick="ChotKQ('48');" class="KetQua KetQuaXanh AnDi" id="KQ48"></div>
+									<div onclick="ChotKQ('49');" class="KetQua KetQuaXanh AnDi" id="KQ49"></div>
+									<div onclick="ChotKQ('50');" class="KetQua KetQuaXanh AnDi" id="KQ50"></div>
+									<div onclick="ChotKQ('51');" class="KetQua KetQuaXanh AnDi" id="KQ51"></div>
+									<div onclick="ChotKQ('52');" class="KetQua KetQuaXanh AnDi" id="KQ52"></div>
+									<div onclick="ChotKQ('53');" class="KetQua KetQuaXanh AnDi" id="KQ53"></div>
+									<div onclick="ChotKQ('54');" class="KetQua KetQuaXanh AnDi" id="KQ54"></div>
+									<div onclick="ChotKQ('55');" class="KetQua KetQuaXanh AnDi" id="KQ55"></div>
+									<div onclick="ChotKQ('56');" class="KetQua KetQuaXanh AnDi" id="KQ56"></div>
+									<div onclick="ChotKQ('57');" class="KetQua KetQuaXanh AnDi" id="KQ57"></div>
+									<div onclick="ChotKQ('58');" class="KetQua KetQuaXanh AnDi" id="KQ58"></div>
+									<div onclick="ChotKQ('59');" class="KetQua KetQuaXanh AnDi" id="KQ59"></div>
+									<div onclick="ChotKQ('60');" class="KetQua KetQuaXanh AnDi" id="KQ60"></div>
+									<div onclick="ChotKQ('61');" class="KetQua KetQuaXanh AnDi" id="KQ61"></div>
+									<div onclick="ChotKQ('62');" class="KetQua KetQuaXanh AnDi" id="KQ62"></div>
+									<div onclick="ChotKQ('63');" class="KetQua KetQuaXanh AnDi" id="KQ63"></div>
+									<div onclick="ChotKQ('64');" class="KetQua KetQuaXanh AnDi" id="KQ64"></div>
+									<div onclick="ChotKQ('65');" class="KetQua KetQuaXanh AnDi" id="KQ65"></div>
+									<div onclick="ChotKQ('66');" class="KetQua KetQuaXanh AnDi" id="KQ66"></div>
+									<div onclick="ChotKQ('67');" class="KetQua KetQuaXanh AnDi" id="KQ67"></div>
+									<div onclick="ChotKQ('68');" class="KetQua KetQuaXanh AnDi" id="KQ68"></div>
+									<div onclick="ChotKQ('69');" class="KetQua KetQuaXanh AnDi" id="KQ69"></div>
+									<div onclick="ChotKQ('70');" class="KetQua KetQuaXanh AnDi" id="KQ70"></div>
+									<div onclick="ChotKQ('71');" class="KetQua KetQuaXanh AnDi" id="KQ71"></div>
+									<div onclick="ChotKQ('72');" class="KetQua KetQuaXanh AnDi" id="KQ72"></div>
+									<div onclick="ChotKQ('73');" class="KetQua KetQuaXanh AnDi" id="KQ73"></div>
+									<div onclick="ChotKQ('74');" class="KetQua KetQuaXanh AnDi" id="KQ74"></div>
+									<div onclick="ChotKQ('75');" class="KetQua KetQuaXanh AnDi" id="KQ75"></div>
+									<div onclick="ChotKQ('76');" class="KetQua KetQuaXanh AnDi" id="KQ76"></div>
+									<div onclick="ChotKQ('77');" class="KetQua KetQuaXanh AnDi" id="KQ77"></div>
+									<div onclick="ChotKQ('78');" class="KetQua KetQuaXanh AnDi" id="KQ78"></div>
+									<div onclick="ChotKQ('79');" class="KetQua KetQuaXanh AnDi" id="KQ79"></div>
+									<div onclick="ChotKQ('80');" class="KetQua KetQuaXanh AnDi" id="KQ80"></div>
+									<div onclick="ChotKQ('81');" class="KetQua KetQuaXanh AnDi" id="KQ81"></div>
+									<div onclick="ChotKQ('82');" class="KetQua KetQuaXanh AnDi" id="KQ82"></div>
+									<div onclick="ChotKQ('83');" class="KetQua KetQuaXanh AnDi" id="KQ83"></div>
+									<div onclick="ChotKQ('84');" class="KetQua KetQuaXanh AnDi" id="KQ84"></div>
+									<div onclick="ChotKQ('85');" class="KetQua KetQuaXanh AnDi" id="KQ85"></div>
+									<div onclick="ChotKQ('86');" class="KetQua KetQuaXanh AnDi" id="KQ86"></div>
+									<div onclick="ChotKQ('87');" class="KetQua KetQuaXanh AnDi" id="KQ87"></div>
+									<div onclick="ChotKQ('88');" class="KetQua KetQuaXanh AnDi" id="KQ88"></div>
+									<div onclick="ChotKQ('89');" class="KetQua KetQuaXanh AnDi" id="KQ89"></div>
+									<div onclick="ChotKQ('90');" class="KetQua KetQuaXanh AnDi" id="KQ90"></div>
+									<div onclick="ChotKQ('91');" class="KetQua KetQuaXanh AnDi" id="KQ91"></div>
+									<div onclick="ChotKQ('92');" class="KetQua KetQuaXanh AnDi" id="KQ92"></div>
+									<div onclick="ChotKQ('93');" class="KetQua KetQuaXanh AnDi" id="KQ93"></div>
+									<div onclick="ChotKQ('94');" class="KetQua KetQuaXanh AnDi" id="KQ94"></div>
+									<div onclick="ChotKQ('95');" class="KetQua KetQuaXanh AnDi" id="KQ95"></div>
+									<div onclick="ChotKQ('96');" class="KetQua KetQuaXanh AnDi" id="KQ96"></div>
+									<div onclick="ChotKQ('97');" class="KetQua KetQuaXanh AnDi" id="KQ97"></div>
+									<div onclick="ChotKQ('98');" class="KetQua KetQuaXanh AnDi" id="KQ98"></div>
+									<div onclick="ChotKQ('99');" class="KetQua KetQuaXanh AnDi" id="KQ99"></div>
+									<div onclick="ChotKQ('100');" class="KetQua KetQuaXanh AnDi" id="KQ100"></div>
+
+
+								</div></center>
+								<input type="text" id="SoKetQuaDaCo" value="1" style="display:none;">
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	
+	<div id="DivCheSetting" style="width:100%;height:100%;position:fixed;top:0px;left:0px;background:black;opacity:0.3;z-index:10;"></div>
+	<div id="DivButtonSetting" style="width:40px;height:40px;position:fixed;top:10px;left:10px;z-index:100;"><a href="#" onclick="ToggleSetting();"><img src="img/setting.png" style="width:40px;height:40px;"></a>
+	</div>
+	<script>
+		function ToggleSetting()
+		{
+			$("#DivSetting").toggle(100);
+			$("#DivCheSetting").toggle(100);
+			$("#TenGiaiThuong").text($("#TxtTenGiai").val());
+		}
+		
+	</script>
+	
+	
+	<div id="DivNhacNen" style="width:1px;height:1px;position:fixed;top:50px;left:10px;background:green;">
+	</div>
+	
+	<a href="#" onclick="ChangeMusic();"><div id="DivButtonMusic" style="width:40px;height:40px;position:fixed;top:10px;left:55px;z-index:100;">
+		<input type="text" id="DangPlay" value="0" style="display:none;">
+		<img src="img/play.png" style="width:40px;height:40px;"></div></a>
+	<script>
+		var timeoutplay1,timeoutplay2,timeoutplay3,timeoutplay4,timeoutplay5, timeoutstop,SolanPlay;
+		var tenfileplayok;
+		
+		function LoadMusic()
+		{
+			var rdnum1,rdnum2,rdnum3,rdnum4,rdnum5;
+			var SoBaiHat = 9;
+			
+			rdnum1 = Math.floor(Math.random() * SoBaiHat)+1;
+			
+			for (var i=1; i<=SoBaiHat; i++)
+			{
+				rdnum2 = Math.floor(Math.random() * SoBaiHat)+1;
+				if (rdnum2 !==rdnum1){break;}
+			}
+			
+			for (var i=1; i<=SoBaiHat; i++)
+			{
+				rdnum3 = Math.floor(Math.random() * SoBaiHat)+1;
+				if (rdnum3 !==rdnum1 && rdnum3 !==rdnum2){break;}
+			}
+			
+			for (var i=1; i<=SoBaiHat; i++)
+			{
+				rdnum4 = Math.floor(Math.random() * SoBaiHat)+1;
+				if (rdnum4 !==rdnum1 && rdnum4 !==rdnum2 && rdnum4 !==rdnum3){break;}
+			}
+			
+			for (var i=1; i<=SoBaiHat; i++)
+			{
+				rdnum5 = Math.floor(Math.random() * SoBaiHat)+1;
+				if (rdnum5!==rdnum1 && rdnum5!==rdnum2 && rdnum5!==rdnum3 && rdnum5!==rdnum4){break;}
+			}
+			$("#DivNhacNen").append('<audio id="MusicTing"><source src="music/ting.mp3" autostart=false loop=true style="width:300px;height:100px;"></audio>');
+			$("#DivNhacNen").append('<audio id="Music1"><source src="music/music'+ rdnum1+'.mp3" autostart=false loop=true style="width:300px;height:100px;"></audio>');
+			$("#DivNhacNen").append('<audio id="Music2"><source src="music/music'+ rdnum2+'.mp3" autostart=false loop=true style="width:300px;height:100px;"></audio>');
+			$("#DivNhacNen").append('<audio id="Music3"><source src="music/music'+ rdnum3+'.mp3" autostart=false loop=true style="width:300px;height:100px;"></audio>');
+			$("#DivNhacNen").append('<audio id="Music4"><source src="music/music'+ rdnum4+'.mp3" autostart=false loop=true style="width:300px;height:100px;"></audio>');
+			$("#DivNhacNen").append('<audio id="Music5"><source src="music/music'+ rdnum5+'.mp3" autostart=false loop=true style="width:300px;height:100px;"></audio>');
+		}
+		
+		LoadMusic();
+		
+		function ChangeMusic()
+		{
+			var DangPlay = $("#DangPlay").val();
+			var ThoiGianQuay = parseInt($("#TxtThoiGian").val());
+			clearTimeout(timeoutplay2);
+			clearTimeout(timeoutplay3);
+			clearTimeout(timeoutplay4);
+			clearTimeout(timeoutplay5);
+			
+			if (DangPlay == "0")
+			{
+				for (var i=1;i<=5;i++)
+				{
+					rdnum = Math.floor(Math.random() * 5)+1;
+					if (rdnum> 0 && rdnum<=5){break;}
+				}
+				
+				for (var i=1;i<=5;i++)
+				{
+					tenfileplay = 'Music'+i;
+					if (i==rdnum)
+					{
+						//alert ('co:'+i);
+						document.getElementById(tenfileplay).play();
+						tenfileplayok = tenfileplay;
+						if (ThoiGianQuay>59) {timeoutplay2 = setTimeout(function(){document.getElementById(tenfileplayok).pause();
+						document.getElementById(tenfileplayok).currentTime=1;document.getElementById(tenfileplayok).play();},60000);}
+						if (ThoiGianQuay>119) {timeoutplay3 = setTimeout(function(){document.getElementById(tenfileplayok).pause();
+						document.getElementById(tenfileplayok).currentTime=1;document.getElementById(tenfileplayok).play();},120000);}
+						if (ThoiGianQuay>179) {timeoutplay4 = setTimeout(function(){document.getElementById(tenfileplayok).pause();
+						document.getElementById(tenfileplayok).currentTime=1;document.getElementById(tenfileplayok).play();},180000);}
+						if (ThoiGianQuay>239) {timeoutplay5 = setTimeout(function(){document.getElementById(tenfileplayok).pause();
+						document.getElementById(tenfileplayok).currentTime=1;document.getElementById(tenfileplayok).play();},240000);}
+					}
+					else
+					{
+						//alert ('khong:'+i);
+						document.getElementById(tenfileplay).pause();
+						document.getElementById(tenfileplay).currentTime=1;
+					}
+				}
+				
+				$("#DivButtonMusic").html('<input type="text" id="DangPlay" value="1" style="display:none;"><img src="img/pause.png" style="width:40px;height:40px;">');
+			}
+			else
+			{
+				$("#DivButtonMusic").html('<input type="text" id="DangPlay" value="0" style="display:none;"><img src="img/play.png" style="width:40px;height:40px;">');
+				for (var i=1;i<=5;i++)
+				{
+					tenfileplay = 'Music'+i;
+					document.getElementById(tenfileplay).pause();
+					document.getElementById(tenfileplay).currentTime=1;
+				}
+			}
+		}
+		
+		
+	</script>
+	
+	
+	<a href="#" onclick="ChangeBg();"><div id="DivChangeBg" style="width:40px;height:40px;position:fixed;top:10px;left:100px;z-index:100;">
+		<input type="text" id="BgId" value="1" style="display:none;">
+		<img src="img/changebg.png" style="width:40px;height:40px;"></div></a>
+	<script>
+		function ChangeBg()
+		{
+			var BgId = $("#BgId").val();
+			var SoLuongBgPNG = 16;
+			var SoLuongBgJPG = 17;
+			var SoLuongBg = SoLuongBgPNG + SoLuongBgJPG;
+			//alert (BgId);
+			if (parseInt(BgId) < SoLuongBgPNG)
+			{
+				BgId = parseInt(BgId)+1;
+				var bgurl = "bg/png/bg"+BgId+".png";
+			}
+			else 
+			{
+				if (parseInt(BgId) < SoLuongBg)
+				{
+					BgId = parseInt(BgId)+1;
+					var BgIdJpg = BgId - SoLuongBgPNG;
+					var bgurl = "bg/jpg/bg"+BgIdJpg+".jpg";
+				}
+				else
+				{BgId= 1;var bgurl = "bg/png/bg1.png";}
+			}
+			$("#BgId").val(BgId);
+			
+			$('body').css('background-image', 'url('+ bgurl + ')');
+			//alert(bgurl);
+		}
+	</script>
+	
+	<div id="DivHuongDan" style="color:white;width:100%;height:370px;position:fixed;top:50px;left:10px;opacity:1;z-index:12;display:none;"><center>
+		<table style="color:white;background:white;padding:10px;border-radius:10px 10px 10px 10px;">
+			<tr>
+				<td>
+				</td>
+				<td>
+					<a href="#" onclick="HideHelp();"><font color="red">X</font></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="img/huongdandscbcnv.jpg" height="100%">
+				</td>
+				<td>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="DivSetting" style="color:white;margin:10px;width:100%;height:400px;text-align:left;position:fixed;top:50px;left:10px;opacity:1;z-index:11;"><center>
+		<table style="color:white;background:green;padding:10px;border-radius:10px 10px 10px 10px;height:400px;">
+			<tr>
+				<td>
+					<table style="width:280px;color:white;background:green;border-radius:10px 10px 10px 10px;" border="0">
+						<tr>
+							<td colspan="2">
+								<center><b>*Vòng quay của chúng ta*</b>
+							</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2">
+								Tên giải:
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<textarea rows="2" placeholder="Giải nhất" style="border-radius:5px;font-weight:bold;font-family:Times new roman;font-size:16px;padding:5px;width:100%;" id="TxtTenGiai">GIẢI NHẤT (trị giá: 1.000.000VNĐ)</textarea>
+							</td>
+						</tr>
+						<tr style="height:10px;">
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table style="width:100%;color:white;">
+									<tr>
+										<td style="width:80px;">
+											Từ số:
+										</td>
+									
+										<td>
+											<input type="text" value="0" maxlength="6" style="border-radius:5px;font-weight:bold;font-size:18px;padding:5px;width:100px;" id="TxtTuSo">
+										</td>
+										<td rowspan="3">
+											<a href="#"><div id="ButtonQuayTheo" style="border-radius:5px 5px 5px 5px;color:white;font-weight:bold;background:orange;padding:10px;margin-left:10px;width:60px;height:100%;font-decoration:none;text-align:center;" onclick="QuayMSNV();">Quay theo <=STT</div></a>
+										</td>
+										<script>
+											function QuayMSNV()
+											{
+												$("#DivCBCNV").toggle();
+												$("#TableDsCBCNV").toggle();
+												var CheDo = $("#ButtonQuayTheo").text();
+												if (CheDo == "Quay theo MSNV=>")
+												{$("#ButtonQuayTheo").text("Quay theo <=STT");}
+												else
+												{$("#ButtonQuayTheo").text("Quay theo MSNV=>");}
+											}
+										</script>
+									</tr>
+									<tr style="height:10px;">
+										<td>
+											
+										</td><td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Đến số:
+										</td>
+									
+										<td>
+											<input type="text" value="999999" maxlength="6" style="border-radius:5px;font-weight:bold;font-size:18px;padding:5px;width:100px;" id="TxtDenSo">
+										</td>
+									</tr>
+								</table>
+							</td>
+						<tr>
+							<td  colspan="2">
+								<table style="width:100%;color:white;">
+									<tr><td>Thời gian quay (giây):
+								</td>
+						
+								<td style="text-align:right;">
+								<input type="number" value="15" maxlength="6" style="border-radius:5px;font-weight:bold;font-size:18px;padding:5px;width:80px;" id="TxtThoiGian">
+								</td></tr></table>
+							</td>
+						</tr>
+						<tr style="height:20px;">
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<center><div style="border: 2px white solid;border-radius:5px;color:white;font-weight:bold;padding:10px;width:120px;" onclick="ToggleSetting();">OK. Quay nào!</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				
+				<td>
+					<table style="color:white;background:white;padding:5px;border-radius:10px 10px 10px 10px;display:none;" id="TableDsCBCNV">
+						<tr>
+							<td colspan="2">
+								<div style="width:100%;width:220px;display:none;height:350px;" id="DivCBCNV">
+									<textarea id="DSCBCNV" style="width:100%;height:100%;font-family:Times new roman;font-size:16px;padding-left:5px;" onkeyup="PhanTichDsCBCNV();"></textarea>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div id="DivTongCBCNV" style="color:black;margin-top:10px;">Tổng số: 100 người</div>
+							</td>
+							<td>
+								<a href="#" onclick="ShowHelp();"><i><font color="green">(Hướng dẫn)</font></i></a>
+							</td>
+							<script>
+								function ShowHelp() {$("#DivHuongDan").show();}
+								function HideHelp() {$("#DivHuongDan").hide();}
+							</script>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<center>
+	<div align='center'><img src='http://www.hit-counts.com/counter.php?t=MTQ1NDg2Nw==' border='0' alt='logo redesign'></div>
+	
+	<div id="DivSetting" style="border-top-right-radius:5px ;border-top-left-radius:5px;color:black;background:white;padding:5px;width:150px;text-align:center;position:fixed;bottom:0px;left:10px;opacity:0.7;">&copyPVCPlus - 2021</div>
+</body>
+<script>
+	var setTimeout1,setTimeout2,setTimeout3,setTimeout4,setTimeout5,setTimeout6;
+	var DanhSachDaTrungThuong =[];
+	$(document).ready(function(){
+		PhanTichDsCBCNV();
+	});
+	  
+	function PhanTichDsCBCNV()
+	{
+		var DanhSach = $("#DSCBCNV").val().split('\n');
+		var SoLuong = 0;
+		for (var i=0;i<DanhSach.length;i++)
+		{
+			if (DanhSach[i].length>0)
+			{SoLuong = SoLuong +1;}
+			var Tach = DanhSach[i].split('	');
+			//alert ("MSNV: " + Tach[0] + " ho va ten: " + Tach[1]);
+		}
+		$("#DivTongCBCNV").text("Tổng số: " + SoLuong + " người");
+		//$("#DivTongCBCNV").text($("#DSCBCNV").val());
+		
+	}
+	
+	
+	function quayso()
+	{
+		var httt = $("#ButtonStart").html();
+		if (httt.length>10)
+		{
+			clearTimeout(setTimeout1);
+			clearTimeout(setTimeout2);
+			clearTimeout(setTimeout3);
+			clearTimeout(setTimeout4);
+			clearTimeout(setTimeout5);
+			clearTimeout(setTimeout6);
+			clearTimeout(setTimeout7);
+			$("#ButtonStart").html('QUAY SỐ');
+			$("#DivSo1").text('0');
+			$("#DivSo2").text('0');
+			$("#DivSo3").text('0');
+			$("#DivSo4").text('0');
+			$("#DivSo5").text('0');
+			$("#DivSo6").text('0');
+			$("#DivButtonMusic").html('<input type="text" id="DangPlay" value="0" style="display:none;"><img src="img/play.png" style="width:40px;height:40px;">');
+			clearTimeout(timeoutplay2);
+			clearTimeout(timeoutplay3);
+			clearTimeout(timeoutplay4);
+			clearTimeout(timeoutplay5);
+			for (var i=1;i<=5;i++)
+				{
+					var tenfileplay = 'Music'+i;
+					document.getElementById(tenfileplay).pause();
+					document.getElementById(tenfileplay).currentTime=1;
+				}
+				
+			document.getElementById("MusicTing").pause();
+			document.getElementById("MusicTing").currentTime=1;
+			document.getElementById("MusicTing").play();
+		}
+		else
+		{
+			$("#DivButtonMusic").html('<input type="text" id="DangPlay" value="0" style="display:none;"><img src="img/play.png" style="width:40px;height:40px;">');
+			ChangeMusic();
+			
+			var CheDo = $("#ButtonQuayTheo").text();
+			if (CheDo == "Quay theo MSNV=>")
+			{
+				var DanhSach = $("#DSCBCNV").val().split('\n');
+				var DanhSachOk =[];
+				var DoDaiMSNV = 0;
+				for (var i=0;i<DanhSach.length;i++)
+				{
+					if (DanhSach[i].length>0)
+					{
+						DanhSachOk.push(DanhSach[i]); 
+						var Tach = DanhSach[i].split('	');
+						if (DoDaiMSNV < Tach[0].length){DoDaiMSNV = Tach[0].length;}
+					}
+				}
+				
+				if (DoDaiMSNV>6){DoDaiMSNV=6;}
+				for (var k=0;k<DanhSachDaTrungThuong.length;k++) {var removed = DanhSachOk.splice(DanhSachDaTrungThuong[k], 1);}
+				if (DanhSachOk.length>0)
+				{
+    				$("#ButtonStart").html('<marquee width="90%" scrollamount="5">ĐANG QUAY SỐ</marquee>');
+    				
+    				$("#DivSo1").html('<center><marquee class="Marqueee" scrollamount="50" behavior="scroll" direction="down"><table class="DivSo"><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr></table></marquee>');
+					$("#DivSo2").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr></table></marquee>');
+					$("#DivSo3").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr></table></marquee>');
+					$("#DivSo4").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr></table></marquee>');
+					$("#DivSo5").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr></table></marquee>');
+					$("#DivSo6").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr></table></marquee>');
+					
+				
+					var rdnum = Math.floor(Math.random() * (DanhSachOk.length-1));
+					//alert (rdnum);
+					var Tach = DanhSachOk[rdnum].split('	');
+					var msnv2 = Tach[0].toString();
+					var msnv="";
+					for (var i = msnv2.length+1; i <=6; i++)
+					{
+						msnv = "0" + msnv;
+					}
+					msnv = msnv + msnv2;
+					
+							
+					var choketqua = parseInt($("#TxtThoiGian").val())*1000;
+					if (choketqua>10000){var luytien = 5000;} else {var luytien = choketqua/2;}
+					var lt2,lt3,lt4,lt5,lt6;
+					
+					if (DoDaiMSNV>5)
+					{				
+						setTimeout1 = setTimeout(function()
+						{
+							$("#DivSo1").text(msnv.substring(0, 1));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua);
+						lt2 =1;
+					}
+					else
+					{
+						$("#DivSo1").text(msnv.substring(0, 1));
+						lt2=0;
+					}
+					
+					if (DoDaiMSNV>4)
+					{
+						setTimeout2 = setTimeout(function()
+						{
+							$("#DivSo2").text(msnv.substring(1, 2));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua+ luytien*lt2);
+						lt3 = lt2+1;
+					}
+					else
+					{$("#DivSo2").text(msnv.substring(1, 2));lt3 = lt2;}
+					
+					
+					if (DoDaiMSNV>3)
+					{
+						setTimeout3 = setTimeout(function()
+						{
+							$("#DivSo3").text(msnv.substring(2, 3));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua+ luytien*lt3);
+						lt4 = lt3+1;
+					}
+					else
+					{$("#DivSo3").text(msnv.substring(2, 3));lt4 = lt3;}
+					
+					
+					
+					if (DoDaiMSNV>2)
+					{
+						setTimeout4 = setTimeout(function()
+						{
+							$("#DivSo4").text(msnv.substring(3, 4));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua+ luytien*lt4);
+						lt5 = lt4+1;
+					}
+					else
+					{$("#DivSo4").text(msnv.substring(3, 4));lt5 = lt4;}
+					
+					
+					if (DoDaiMSNV>1)
+					{
+						setTimeout5 = setTimeout(function()
+						{
+							$("#DivSo5").text(msnv.substring(4, 5));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua+ luytien*lt5);
+						lt6 = lt5+1;
+					}
+					else
+					{$("#DivSo5").text(msnv.substring(4, 5));lt6 = lt5;}
+					
+					setTimeout6 = setTimeout(function()
+					{
+						$("#ButtonStart").html('QUAY SỐ');
+						$("#DivSo6").text(msnv.substring(5, 6));
+						document.getElementById("MusicTing").currentTime=1;
+						document.getElementById("MusicTing").play();
+					}, choketqua+ luytien*lt6);
+				   
+					var msnv3="";
+					for (var i = msnv2.length+1; i <= DoDaiMSNV; i++)
+					{
+						msnv3 = "0" + msnv3;
+					}
+					msnv4 = msnv3 + msnv2;
+					
+					setTimeout7 = setTimeout(function()
+					{
+					    DanhSachDaTrungThuong.push(rdnum);
+					    var DenKQSo = $("#SoKetQuaDaCo").val();
+					    $("#SoKetQuaDaCo").val(parseInt(DenKQSo) +1);
+					    var KQKQ = '#KQ' + DenKQSo;
+					    var kqs = "#BoKQ" + DenKQSo;
+					    $(KQKQ).text(msnv4);
+					    
+					    $(KQKQ).removeClass('KetQuaVang');
+					    $(KQKQ).removeClass('KetQuaDo');
+					    $(KQKQ).addClass('KetQuaXanh');
+					    $(kqs).val("0");
+					    
+					    $(KQKQ).show();
+						//$("#DivDanhSachTrungThuong").append('<div class="KetQua">'+msnv4+': '+ Tach[1] +'</div>'); 
+						ChangeMusic();
+						setTimeout(function()
+						{document.getElementById("MusicTing").currentTime=1;
+						document.getElementById("MusicTing").play();},500);
+					}, choketqua+ luytien*lt6+300);
+				}
+				else
+				{alert("Mọi người đều đã trúng thưởng!");}
+					//var removed = DanhSachOk.splice(rdnum, 1);
+			}
+			else
+			{
+				var tuso = $("#TxtTuSo").val();
+				var denso = $("#TxtDenSo").val();
+				var dulieuok = 1;
+				$("#ButtonStart").html('<marquee width="90%" scrollamount="5">ĐANG QUAY SỐ</marquee>');
+				if ($.isNumeric(tuso))
+				{
+					if ($.isNumeric(denso))
+					{
+						if (parseInt(tuso) >=  parseInt(denso)){alert('Vui lòng nhập "Từ Số" < "Đến Số"!!');dulieuok=0;}
+					} 
+					else {alert('Vui lòng chỉ nhập số vào ô "Đến Số"!!');dulieuok=0;}
+				} 
+				else {alert('Vui lòng chỉ nhập số vào ô "Từ Số"!!');dulieuok=0;}
+				
+				
+				var field_name, value, edit_id;
+				
+				if (dulieuok==1)
+				{
+					$("#DivSo1").html('<center><marquee class="Marqueee" scrollamount="50" behavior="scroll" direction="down"><table class="DivSo"><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr></table></marquee>');
+					$("#DivSo2").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr></table></marquee>');
+					$("#DivSo3").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr></table></marquee>');
+					$("#DivSo4").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr></table></marquee>');
+					$("#DivSo5").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr></table></marquee>');
+					$("#DivSo6").html('<center><marquee class="Marqueee"  scrollamount="50" behavior="scroll" direction="down"><table style="font-size:90px;"><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr><tr><td>6</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>4</td></tr><tr><td>1</td></tr><tr><td>0</td></tr><tr><td>9</td></tr><tr><td>5</td></tr><tr><td>0</td></tr><tr><td>1</td></tr><tr><td>5</td></tr></table></marquee>');
+					
+					var rdnum = Math.floor(Math.random() * (1+parseInt(denso-tuso))) + parseInt(tuso);
+					var msnv2 = rdnum.toString();
+					var msnv="";
+					for (var i = msnv2.length+1; i <=6; i++)
+					{
+						msnv = "0" + msnv;
+					}
+					msnv = msnv + msnv2;
+					
+							
+					var choketqua = parseInt($("#TxtThoiGian").val())*1000;
+					if (choketqua>10000){var luytien = 5000;} else {var luytien = choketqua/2;}
+					var lt2,lt3,lt4,lt5,lt6;
+					
+					if (denso.length>5)
+					{				
+						setTimeout1 = setTimeout(function()
+						{
+							$("#DivSo1").text(msnv.substring(0, 1));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua);
+						lt2 =1;
+					}
+					else
+					{
+						$("#DivSo1").text(msnv.substring(0, 1));
+						lt2=0;
+					}
+					
+					if (denso.length>4)
+					{
+						setTimeout2 = setTimeout(function()
+						{
+							$("#DivSo2").text(msnv.substring(1, 2));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua+ luytien*lt2);
+						lt3 = lt2+1;
+					}
+					else
+					{$("#DivSo2").text(msnv.substring(1, 2));lt3 = lt2;}
+					
+					
+					if (denso.length>3)
+					{
+						setTimeout3 = setTimeout(function()
+						{
+							$("#DivSo3").text(msnv.substring(2, 3));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua+ luytien*lt3);
+						lt4 = lt3+1;
+					}
+					else
+					{$("#DivSo3").text(msnv.substring(2, 3));lt4 = lt3;}
+					
+					
+					
+					if (denso.length>2)
+					{
+						setTimeout4 = setTimeout(function()
+						{
+							$("#DivSo4").text(msnv.substring(3, 4));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua+ luytien*lt4);
+						lt5 = lt4+1;
+					}
+					else
+					{$("#DivSo4").text(msnv.substring(3, 4));lt5 = lt4;}
+					
+					
+					if (denso.length>1)
+					{
+						setTimeout5 = setTimeout(function()
+						{
+							$("#DivSo5").text(msnv.substring(4, 5));
+							document.getElementById("MusicTing").currentTime=1;
+							document.getElementById("MusicTing").play();
+						}, choketqua+ luytien*lt5);
+						lt6 = lt5+1;
+					}
+					else
+					{$("#DivSo5").text(msnv.substring(4, 5));lt6 = lt5;}
+					
+					setTimeout6 = setTimeout(function()
+					{
+						$("#ButtonStart").html('QUAY SỐ');
+						$("#DivSo6").text(msnv.substring(5, 6));
+						document.getElementById("MusicTing").currentTime=1;
+						document.getElementById("MusicTing").play();
+					}, choketqua+ luytien*lt6);
+				   
+					var msnv3="";
+					for (var i = msnv2.length+1; i <= denso.length; i++)
+					{
+						msnv3 = "0" + msnv3;
+					}
+					msnv4 = msnv3 + msnv2;
+					
+					setTimeout7 = setTimeout(function()
+					{
+					    var DenKQSo = $("#SoKetQuaDaCo").val();
+					    $("#SoKetQuaDaCo").val(parseInt(DenKQSo) +1);
+					    var KQKQ = '#KQ' + DenKQSo;
+					    var kqs = "#BoKQ" + DenKQSo;
+					    $(KQKQ).text(msnv4);
+					    
+					    $(KQKQ).removeClass('KetQuaVang');
+					    $(KQKQ).removeClass('KetQuaDo');
+					    $(KQKQ).addClass('KetQuaXanh');
+					    $(kqs).val("0");
+					    
+					    $(KQKQ).show();
+						//$("#DivDanhSachTrungThuong").append('<div class="KetQua" style="">'+msnv4+'</div>'); 
+						ChangeMusic();
+						setTimeout(function()
+						{document.getElementById("MusicTing").currentTime=1;
+						document.getElementById("MusicTing").play();},500);
+					}, choketqua+ luytien*lt6+300);
+				}
+			}
+		}
+	}
+</script>
